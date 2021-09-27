@@ -88,3 +88,33 @@ print('jargon' in 'I hope this course is not full of jargon')
 
 _str = str(float(len('python')))
 print('el largo de ' + _str + ' es', len(_str))
+
+#17. Even numbers are divisible by 2 and the remainder is zero. How do 3#you check if a number is even or not using python?
+numero = int(input('Introduce un numero'))
+print('El numero es impar:', numero%2 == 1)
+#18. The floor division of 7 by 3 is equal to the int converted value of#2.7.
+print('La division flotante de 7 y 3 es igual al valor entero de 2.7: ', 7//3 == int(2.7))
+#19. Check if type of '10' is equal to 10
+print('\'10\'es igual a 10',type('10')==type(10))
+#20. Check if int('9.8') is equal to 10
+print('El entero de 9.8 es igual a 10:',int(9.8) == 10)
+#21. Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+no_horas = int(input('Introduzca la cantidad de horas'))
+paga_por_hora = int(input('Introduzca la paga por hora'))
+
+print(no_horas * paga_por_hora)
+#22. Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume someone lives up to hundred years
+anios = int(input('Cuantos años has vivido'))
+
+print('Has vivido: ', anios*12*30*24*3600, 'segundos')
+
+#23. Write a python script that displays the following table
+
+print('''      
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+      '''
+)
